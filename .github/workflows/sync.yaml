@@ -2,9 +2,6 @@ name: productiontest
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '15 */12 * * *' # Scheduled log rotation
-
 jobs:
   system_sync:
     runs-on: ubuntu-latest
